@@ -17,6 +17,8 @@ Throughout the course, I gained hands-on experience working with real-world data
 # **Capstone Project: Sleep Health Analysis** :sleeping:
 ***The capstone project demonstrates the integration of all skills acquired during the program:***
 
+<img width="606" height="340" alt="Sleep Data Analytics Full Presentation Cover" src="https://github.com/user-attachments/assets/0e558d0e-8335-45e1-b288-370974e69017" />
+
 "Sleep Data Analysis: From Raw Data to Insights​: A Data-Driven Investigation into Sleep Health​"
 
 As I have an educational background in biology and bioinformatics and my professional goal is to transition to a health data analyst role, I picked for the project a set of health data that at this time ignited my curiosity, related to the quality of our sleep.  
@@ -45,7 +47,6 @@ I then followed the Process Framework learned during the BrainStation’s Data A
 - [Results/Findings](#results/findings)
 - [Drawing Conclusions: Key Considerations​ & Limitations](#drawing-conclusions:-key-considerations​-&-limitations)
 - [References & Resources](#references-&-resources)
-  
 
 ## Problem Definition 
 Research Context - The Big Picture: Why Sleep Matters​ 
@@ -195,6 +196,8 @@ Disproportionate number of females with stage 2 hypertension
 Potential sampling bias: 94% of Stage 2 cases are female 
 
 May require additional validation or data collection 
+
+<img width="354" height="203" alt="Avg  Sleep Duration by Gender" src="https://github.com/user-attachments/assets/6e730e1a-35be-4731-a1eb-ef4edf2ff355" />
 
 ## Drawing Conclusions: Key Considerations​ & Limitations
 Rich dataset with potential insights for Sleep Metrics:​
