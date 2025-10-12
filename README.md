@@ -46,7 +46,7 @@ I then followed the Process Framework learned during the BrainStation’s Data A
 - [Exploratory Data Analysis](#exploratory-data-analysis)
 - [Initial Data Analysis](#initial-data-analysis)
 - [Results](#results)
-- [Key Considerations​ and Limitations](#key-considerations​-and-limitations)
+- [Considerations​ and Limitations](#considerations​-and-limitations)
 - [References](#references)
 
 ## Problem Definition 
@@ -200,7 +200,9 @@ May require additional validation or data collection
 
 <img width="354" height="203" alt="Avg  Sleep Duration by Gender" src="https://github.com/user-attachments/assets/6e730e1a-35be-4731-a1eb-ef4edf2ff355" />
 
-## Key Considerations​ and Limitations
+
+## Considerations​ and Limitations
+
 Drawing Conclusions: 
 Rich dataset with potential insights for Sleep Metrics:​
 
