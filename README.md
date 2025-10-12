@@ -13,6 +13,7 @@ Throughout the course, I gained hands-on experience working with real-world data
  
  :small_blue_diamond: Tableau: Designing interactive dashboards, applying visualization best practices, and data storytelling
 
+---
 
 # **Capstone Project: Sleep Health Analysis** :sleeping:
 ***The capstone project demonstrates the integration of all skills acquired during the program:***
@@ -41,12 +42,12 @@ I then followed the Process Framework learned during the BrainStation’s Data A
 ## Table of Contents
 - [Problem Definition](#problem-definition)
 - [Data Collection](#data-collection)
-- [Data Preparation & Cleaning](#data-preparation-&-cleaning)
+- [Data Preparation and Cleaning](#data-preparation-and-cleaning)
 - [Exploratory Data Analysis](#exploratory-data-analysis)
 - [Initial Data Analysis](#initial-data-analysis)
-- [Results/Findings](#results/findings)
-- [Drawing Conclusions: Key Considerations​ & Limitations](#drawing-conclusions:-key-considerations​-&-limitations)
-- [References & Resources](#references-&-resources)
+- [Results](#results)
+- [Key Considerations​ and Limitations](#key-considerations​-and-limitations)
+- [References](#references)
 
 ## Problem Definition 
 Research Context - The Big Picture: Why Sleep Matters​ 
@@ -81,7 +82,7 @@ From _"The Global Problem of Insufficient Sleep and Its Serious Public Health Im
 - Stress levels 
 - Daily steps 
 
-## Data Preparation & Cleaning
+## Data Preparation and Cleaning
 In the initial data preparation phase, the following cleaning steps were performed:
  - BMI Category Standardization
      - Corrected inconsistencies between "Normal" and "Normal Weight"
@@ -152,7 +153,7 @@ CREATE TABLE sleepdata (
 ```
 
 
-## Results/Findings
+## Results
 The analysis insights are summarized are follows: 
 
 Key Findings 
@@ -199,7 +200,8 @@ May require additional validation or data collection
 
 <img width="354" height="203" alt="Avg  Sleep Duration by Gender" src="https://github.com/user-attachments/assets/6e730e1a-35be-4731-a1eb-ef4edf2ff355" />
 
-## Drawing Conclusions: Key Considerations​ & Limitations
+## Key Considerations​ and Limitations
+Drawing Conclusions: 
 Rich dataset with potential insights for Sleep Metrics:​
 
 The data analysis shows that sleep quality and duration is positively
@@ -244,17 +246,23 @@ Validate blood pressure
 distributions against population
 norms​
 
-## References & Resources
+---
+
+## References
 
 1. Chattu VK, Manzar MD, Kumary S, Burman D, Spence DW, Pandi-Perumal SR. The Global Problem of Insufficient Sleep and Its Serious Public Health Implications. Healthcare (Basel). 2018 Dec 20;7(1):1. doi: 10.3390/healthcare7010001
 2. Keyboard shortcuts in Excel: https://support.microsoft.com/en-us/office/keyboard-shortcuts-in-excel-1798d9d5-842a-42b8-9c99-9b7213f0040f
 
+---
+
+🥇💻
+|Heasding 1|Heading2|
+|----------|--------|
+|Content|Content2|
+|Python|SQL|
+
+`column_1`
+
+
+
 ========================
-
-#### Repository Contents
-
-/projects/ – Jupyter notebooks, SQL scripts, and Excel files used for exploratory and statistical analysis
-
-/dashboards/ – Tableau workbooks and interactive dashboards
-
-/docs/ – Project write-ups, insights summaries, and presentation materials
