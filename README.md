@@ -26,6 +26,8 @@ As I have an educational background in biology and bioinformatics and my profess
 
 I then followed the Process Framework learned during the BrainStation’s Data Analytics classes: Questions -> Collection -> Explore -> Conclusions -> Communicate 
 
+<img width="530" height="176" alt="Data Framework" src="https://github.com/user-attachments/assets/0961674d-01c5-45e1-ac34-97fceafa34a6" />
+
 ## Project Overview
  - Objective: Investigate sleep health patterns and their correlation with lifestyle and health factors.
  - Approach:
@@ -66,21 +68,31 @@ From _"The Global Problem of Insufficient Sleep and Its Serious Public Health Im
 - ***Disclaimer:***
    - _While I initially intended to work with real-world data and plan to repeat this process using authentic datasets in the future, I discovered late in the project that the dataset used, includes a note indicating that it is synthetic data created by the uploader for illustrative purposes. Nonetheless, given that this dataset has been previously utilized in other analyses and has received positive feedback for its structure and usability, I chose to proceed with it for demonstration purposes. Please note that, although the analytical process and methodology remain valid and replicable, any insights, trends, or correlations derived from this dataset **should not** be interpreted as factual or representative of real-world phenomena._
 
+
+<img width="615" height="336" alt="Data Card Kaggle View" src="https://github.com/user-attachments/assets/95b21540-0e1a-4196-8ca2-968d51ec1b09" />
+
+
 ### Key Features:
 1. Sleep Metrics :waning_crescent_moon::zzz:
-- Sleep duration 
-- Sleep quality 
+- Sleep duration (hours per day)​​ 
+- Sleep quality (subjective rating, scale: 1-10)​ 
 - Sleep disorders (Insomnia, Sleep Apnea) 
 
 2. Health Indicators  :sparkling_heart:
-- Blood pressure 
-- Heart rate 
-- BMI category 
+- Blood pressure (systolic/diastolic)​ 
+- Heart rate (bpm)​​
+- BMI category (Underweight, Normal, Overweight)​ 
 
 3. Lifestyle Factors :walking:
-- Physical activity levels 
-- Stress levels 
-- Daily steps 
+- Physical activity levels (minutes/day)
+- Stress levels (subjective rating, scale: 1-10)​ 
+- Daily steps
+
+4. Identifiers 👥
+   - Person ID​
+   - Gender ​(Male/Female)​
+   - Age (years)​
+   - Occupation​ 
 
 ## Data Preparation and Cleaning
 In the initial data preparation phase, the following cleaning steps were performed:
@@ -126,7 +138,7 @@ _Test the hypothesis that sleep quality and duration positively correlate with a
 ## Initial Data Analysis 
 
 1. Database Setup & SQL Dataset Importing
-   - SQL Analysis Code:
+   - SQL Database Setup Code:
 
 ```sql
 CREATE SCHEMA sleep_database;
@@ -151,7 +163,9 @@ CREATE TABLE sleepdata (
   PRIMARY KEY (PersonID) 
 ); 
 ```
+<img width="204" height="244" alt="SQL Table creation" src="https://github.com/user-attachments/assets/aedcf3ce-6625-4742-9b24-c47cee9a0c1e" />
 
+ - Loading data into the created table
 
 ## Results
 The analysis insights are summarized are follows: 
