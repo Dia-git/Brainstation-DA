@@ -51,7 +51,9 @@ I then followed the Process Framework learned during the BrainStation’s Data A
 - [Data Vizualizations in Tableau](#data-vizualizations-in-tableau)
 - [Results](#results)
 - [Conclusions and Limitations](#conclusions-and-limitations)
+- [Feedback Summary](#feedback-summary)
 - [References](#references)
+
 
 ## Problem Definition 
 Research Context - The Big Picture: Why Sleep Matters​ 
@@ -455,7 +457,7 @@ Key Findings
 - Very High BP (Stage 2): 69 individuals total (Males: 4 cases, Females: 65 cases)
   
 
-4. **Notable Data Quality Concerns:**
+4. **Notable Data Quality Concerns:** 💥
    
      I. Age Distribution Bias:
 
@@ -496,14 +498,30 @@ Key Findings
 - Consider a larger population sample that is closer to a normal distribution in terms of age. ​​
 - Validate blood pressure distributions against population norms​.
 
+
+---
+
+## Feedback Summary
+
+The following summary is based on final project feedback received from BrainStation Tutors:
+- Final project praised for rigor, clear direction, and thorough problem-solving—even in the face of difficult data challenges.
+- Data breakdowns were particularly thorough, with analysis and visualizations described as clear, well-structured, and supportive of the project's narrative.
+- One of the strongest projects in the cohort.
+
 ---
 
 ## References
 
 1. Chattu VK, Manzar MD, Kumary S, Burman D, Spence DW, Pandi-Perumal SR. The Global Problem of Insufficient Sleep and Its Serious Public Health Implications. Healthcare (Basel). 2018 Dec 20;7(1):1. doi: 10.3390/healthcare7010001
-2. Keyboard shortcuts in Excel: https://support.microsoft.com/en-us/office/keyboard-shortcuts-in-excel-1798d9d5-842a-42b8-9c99-9b7213f0040f
-
+2. [Data Analytics Course Support](https://brainstation.io/course/online/data-analytics)
+3. [Excel Excercises](https://excelexercises.com/)
+4. [Writing on GitHub - Basic writing and formatting syntax](https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax)
+5. [Microsoft keyboard shortcuts in Excel](https://support.microsoft.com/en-us/office/keyboard-shortcuts-in-excel-1798d9d5-842a-42b8-9c99-9b7213f0040f)
+6. [Complete list of github markdown emoji markup](https://gist.github.com/rxaviers/7360908)
+7. [How to Document Data Analysis Projects on GitHub the Right Way by Her Data Project](https://www.youtube.com/watch?v=0N9xekdKCwk)
+8. 
 ---
+
 
 🥇💻
 |Heasding 1|Heading2|
