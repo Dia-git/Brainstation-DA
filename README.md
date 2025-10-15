@@ -22,6 +22,8 @@ Throughout the course, I gained hands-on experience working with real-world data
 
 "Sleep Data Analysis: From Raw Data to Insights​: A Data-Driven Investigation into Sleep Health​"
 
+[Summary Tableau Dashboard Snapshot Here](tableau.com)
+
 As I have an educational background in biology and bioinformatics and my professional goal is to transition to a health data analyst role, I picked for the project a set of health data that at this time ignited my curiosity, related to the quality of our sleep.  
 
 I then followed the Process Framework learned during the BrainStation’s Data Analytics classes: Questions -> Collection -> Explore -> Conclusions -> Communicate 
@@ -42,6 +44,7 @@ I then followed the Process Framework learned during the BrainStation’s Data A
 - :bar_chart: Tableau - Creating Reports & Dashboards
 
 ## Table of Contents
+- [Key Takeaways](#key-takeaways)
 - [Problem Definition](#problem-definition)
 - [Data Collection](#data-collection)
 - [Data Preparation and Cleaning](#data-preparation-and-cleaning)
@@ -53,6 +56,8 @@ I then followed the Process Framework learned during the BrainStation’s Data A
 - [Conclusions and Limitations](#conclusions-and-limitations)
 - [Feedback Summary](#feedback-summary)
 - [References](#references)
+
+## Key Takeaways
 
 
 ## Problem Definition 
@@ -485,18 +490,28 @@ Key Findings
 
 📌 More balanced data is needed to find statistically significant insights. ​
 
+Practical Implications:
+   - These patterns suggest that interventions aimed at reducing stress or improving physical activity could help improve sleep quality.
 
 2. Limitations​: Data Quality Alert​​
+The analysis compared distributions of key variables by gender to evaluate bias
 
-⚠️ Potential Biases:​​
+⚠️ Potential Biases discovered:​​
 - Age gap between genders​​
 - Uneven BP distribution​​
 - Uneven Distinct Age Counts​​
 
 
-🔎 ​​Recommendations for Further Analysis:​​
+
+3. 🔎 ​​Recommendations for Further Analysis:​​
+Improve Data Quality & Quantity:
 - Consider a larger population sample that is closer to a normal distribution in terms of age. ​​
 - Validate blood pressure distributions against population norms​.
+
+Next Steps given more time and improved data:
+- Where possible, expand the analysis to include summary statistics (e.g., correlations, averages, or percentage differences).
+- Build a regression model predicting sleep quality using health and lifestyle variables.
+- Cluster individuals based on sleep behavior patterns.
 
 
 ---
