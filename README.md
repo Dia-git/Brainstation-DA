@@ -519,7 +519,6 @@ The following summary is based on final project feedback received from BrainStat
 5. [Microsoft keyboard shortcuts in Excel](https://support.microsoft.com/en-us/office/keyboard-shortcuts-in-excel-1798d9d5-842a-42b8-9c99-9b7213f0040f)
 6. [Complete list of github markdown emoji markup](https://gist.github.com/rxaviers/7360908)
 7. [How to Document Data Analysis Projects on GitHub the Right Way by Her Data Project](https://www.youtube.com/watch?v=0N9xekdKCwk)
-8. 
 ---
 
 
