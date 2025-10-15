@@ -201,30 +201,34 @@ _Test the hypothesis that sleep quality and duration positively correlate with a
 3. Data Vizualizations in Excel
 
 
+
 Checking Data Validity 
 
 - Looking at data by Age Group:
    
-<img width="266" height="164" alt="Excel Bar Chart by Age Group" src="https://github.com/user-attachments/assets/00f983e5-e730-429d-be87-f0763788ca72" />
+<img width="532" height="328" alt="Excel Bar Chart by Age Group" src="https://github.com/user-attachments/assets/00f983e5-e730-429d-be87-f0763788ca72" />
+
 
 
 - Sleep disorders:​ 
 
- <img width="319" height="130" alt="Sleep Disorders Excel Chart#" src="https://github.com/user-attachments/assets/0acd0f71-f48d-43af-af31-78e220dcb55c" />
+ <img width="638" height="260" alt="Sleep Disorders Excel Chart#" src="https://github.com/user-attachments/assets/0acd0f71-f48d-43af-af31-78e220dcb55c" />
  
  Observation: The chart shows what we would expect in terms of the relationship between sleep disorders and sleep duration, and sleep quality as rated by the individuals.  
 
 
+
 - Looking at ​occupations per age group and respective stress levels​:
   
-<img width="321" height="141" alt="Stress Levels   Occupation - Excel Chart" src="https://github.com/user-attachments/assets/78fcc262-7107-40de-a293-3e54a72432c7" />
+<img width="642" height="282" alt="Stress Levels   Occupation - Excel Chart" src="https://github.com/user-attachments/assets/78fcc262-7107-40de-a293-3e54a72432c7" />
 
 Observation: Looking at the distribution of occupations across the three age groups, we can see a clear difference, in the diversity of roles. The first (27-36) group has the most varied roles (9 different occupations) while the oldest one (37-59) only showcases 4 occupations. This imbalance might create some biased insights, specifically for roles that don’t have a comparative in the other age groups.  
 
 
+
 - Looking at BMI per age group and their average sleep duration​:
   
-<img width="298" height="156" alt="BMI Chart - Excel" src="https://github.com/user-attachments/assets/9d44555c-555d-4cd4-a92b-a274473296f7" />
+<img width="596" height="312" alt="BMI Chart - Excel" src="https://github.com/user-attachments/assets/9d44555c-555d-4cd4-a92b-a274473296f7" />
 
 Observation: Looking at all the age groups and the average sleep duration by BMI category, it’s a bit more difficult distinguish a clear trend. Only A slight increase in sleep duration can be noticed for the older age group. However, Individuals who are obese or overweight seem to not be getting as much sleep as the people in the ‘normal weight’ category.
 
@@ -262,13 +266,19 @@ CREATE TABLE sleepdata (
 ```
 <img width="204" height="244" alt="SQL Table creation" src="https://github.com/user-attachments/assets/aedcf3ce-6625-4742-9b24-c47cee9a0c1e" />
 
+
+
  - Configure Import Settings & loading data into the created table:
    
 <img width="612" height="422" alt="Import Settings - MySql" src="https://github.com/user-attachments/assets/4e6a3a86-73e5-4d06-9749-1e8d30504f2d" />
 
+
+
  - Set as Default Schema:
    
 <img width="578" height="360" alt="Set as Default schema in MySQl" src="https://github.com/user-attachments/assets/8d87214d-2674-42f6-b018-6f633150f887" />
+
+
 
  - Inspecting Data in SQL:
 
@@ -313,14 +323,14 @@ GROUP BY Gender;
 
 - EDA Observations:
 
-   1. There’s a difference in age averages between male and female which can create biases in the data analysis results: 37.0741 (Male) vs 47.4054 (Female)
+1. There’s a difference in age averages between male and female which can create biases in the data analysis results: 37.0741 (Male) vs 47.4054 (Female)
 
 <img width="156" height="71" alt="Average age by gender - SQL EDA Outcome" src="https://github.com/user-attachments/assets/be3a32ae-0f65-4fad-aacd-a1ff22de911e" />
 
-        
-   3. The males in our sample are on average more stressed than the females: 6.0794 (Male) vs 4.6757 (Female)
-        
-   4. For other measures the data is more balanced: 
+
+
+2. The males in our sample are on average more stressed than the females: 6.0794 (Male) vs 4.6757 (Female)
+3. For other measures the data is more balanced: 
 
   <img width="522" height="98" alt="Health Metrics EDA in MySQl" src="https://github.com/user-attachments/assets/12f34fc6-0ad4-41e3-b043-d4f2aa94acb1" />
 
@@ -373,6 +383,9 @@ GROUP BY Gender;
 
 
 
+<img width="708" height="406" alt="Avg  Sleep Duration by Gender" src="https://github.com/user-attachments/assets/6e730e1a-35be-4731-a1eb-ef4edf2ff355" />
+
+
 
 ## Results
 The analysis insights are summarized are follows: 
@@ -404,8 +417,7 @@ Key Findings
      - Potential sampling bias: 94% of Stage 2 cases are female
      - May require additional validation or data collection 
 
-<img width="354" height="203" alt="Avg  Sleep Duration by Gender" src="https://github.com/user-attachments/assets/6e730e1a-35be-4731-a1eb-ef4edf2ff355" />
- 
+
 
 ## Conclusions and Limitations
 
