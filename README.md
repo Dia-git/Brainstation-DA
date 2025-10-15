@@ -47,10 +47,10 @@ I then followed the Process Framework learned during the BrainStation’s Data A
 - [Data Preparation and Cleaning](#data-preparation-and-cleaning)
 - [Exploratory Data Analysis](#exploratory-data-analysis)
 - [Initial Data Analysis in Excel](#initial-data-analysis-in-excel)
-- [EDA ​with SQL](#eda-​with-sql)
+- [Exploratory Data Analysis ​with SQL](#exploratory-data-analysis-​with-sql)
 - [Data Vizualizations in Tableau](#data-vizualizations-in-tableau)
 - [Results](#results)
-- [Limitations](#limitations)
+- [Conclusions and Limitations](#conclusions-and-limitations)
 - [References](#references)
 
 ## Problem Definition 
@@ -105,14 +105,13 @@ In the initial data preparation phase, the following cleaning steps were perform
      - Used 'Split Text to Columns' action (+ Delete)
 
 
-  <img width="314" height="149" alt="Excel - Data cleaning BMI Categories" src="https://github.com/user-attachments/assets/a60aa3dd-5168-4d0b-b8f6-a33225c66734" />
+  <img width="628" height="298" alt="Excel - Data cleaning BMI Categories" src="https://github.com/user-attachments/assets/a60aa3dd-5168-4d0b-b8f6-a33225c66734" />
 
  - Blood Pressure Processing 
      - Split BP text string into two numerical columns:  
-             - Systolic Blood Pressure
-             - Diastolic Blood Pressure
+               - Systolic Blood Pressure & Diastolic Blood Pressure
      - Used LEFT() and RIGHT() functions for separation
-     - Changed the newly created columns into numerical format rather than text string 
+     - Changed the newly created columns to a numerical format rather than text string for further analysis
 
 
 ```Excel
@@ -139,9 +138,8 @@ In the initial data preparation phase, the following cleaning steps were perform
   <img width="416" height="226" alt="Excel Split text" src="https://github.com/user-attachments/assets/2213e90c-82c5-4a7e-9934-914e5d333979" />
 
 
-
 - Saved Cleaned and Prepared  _"Sleep_health_and_lifestyle_dataset.csv"_ file as:
-           ***"Sleep_dataset_SQL.csv"***  - [See file here](
+           ***"Sleep_dataset_SQL.csv"***  - [See file here](https://github.com/Dia-git/Brainstation-DA/blob/main/Sleep_dataset_SQL.csv)
 
   
 ## Exploratory Data Analysis 
@@ -192,14 +190,48 @@ _Test the hypothesis that sleep quality and duration positively correlate with a
 
 2. PivotTable Analysis
 
-  - The pivot table shows that the data is a bit unbalanced in terms of count of distinctive age for each of the three groups, with the middle one (37 to 46) having more individuals (158) compared to  the other 2(106 and 110).
+  - The pivot table shows that the data is a bit unbalanced in terms of count of distinctive age for each of the three groups, with the middle one (37 to 46) having more individuals (158) compared to  the other 2 (106 and 110).
   - The sleep duration is not very different for all groups on average, with a slight increase with the age increase. The same increase can be noticed for average quality of sleep but to a slightly higher degree.
   - Physical Activity levels are rather different with the older group (47- 59) being slightly more active on average.  
 
-<img width="317" height="57" alt="Pivot Table - excel" src="https://github.com/user-attachments/assets/5a293abd-0756-4c0c-964c-6cb02f6d7f15" />
+<img width="634" height="114" alt="Pivot Table - excel" src="https://github.com/user-attachments/assets/5a293abd-0756-4c0c-964c-6cb02f6d7f15" />
 
 
-## EDA ​with SQL
+
+3. Data Vizualizations in Excel
+
+
+Checking Data Validity 
+
+- Looking at data by Age Group:
+   
+<img width="266" height="164" alt="Excel Bar Chart by Age Group" src="https://github.com/user-attachments/assets/00f983e5-e730-429d-be87-f0763788ca72" />
+
+
+- Sleep disorders:​ 
+
+ <img width="319" height="130" alt="Sleep Disorders Excel Chart#" src="https://github.com/user-attachments/assets/0acd0f71-f48d-43af-af31-78e220dcb55c" />
+ 
+ Observation: The chart shows what we would expect in terms of the relationship between sleep disorders and sleep duration, and sleep quality as rated by the individuals.  
+
+
+- Looking at ​occupations per age group and respective stress levels​:
+  
+<img width="321" height="141" alt="Stress Levels   Occupation - Excel Chart" src="https://github.com/user-attachments/assets/78fcc262-7107-40de-a293-3e54a72432c7" />
+
+Observation: Looking at the distribution of occupations across the three age groups, we can see a clear difference, in the diversity of roles. The first (27-36) group has the most varied roles (9 different occupations) while the oldest one (37-59) only showcases 4 occupations. This imbalance might create some biased insights, specifically for roles that don’t have a comparative in the other age groups.  
+
+
+- Looking at BMI per age group and their average sleep duration​:
+  
+<img width="298" height="156" alt="BMI Chart - Excel" src="https://github.com/user-attachments/assets/9d44555c-555d-4cd4-a92b-a274473296f7" />
+
+Observation: Looking at all the age groups and the average sleep duration by BMI category, it’s a bit more difficult distinguish a clear trend. Only A slight increase in sleep duration can be noticed for the older age group. However, Individuals who are obese or overweight seem to not be getting as much sleep as the people in the ‘normal weight’ category.
+
+
+
+## Exploratory Data Analysis ​with SQL
+
 
 1. Database Setup & SQL Dataset Importing Steps
 
@@ -339,6 +371,9 @@ GROUP BY Gender;
 
 ## Data Vizualizations in Tableau
 
+
+
+
 ## Results
 The analysis insights are summarized are follows: 
 
@@ -372,54 +407,33 @@ Key Findings
 <img width="354" height="203" alt="Avg  Sleep Duration by Gender" src="https://github.com/user-attachments/assets/6e730e1a-35be-4731-a1eb-ef4edf2ff355" />
  
 
-## Limitations
+## Conclusions and Limitations
 
-Drawing Conclusions: 
-Rich dataset with potential insights for Sleep Metrics:​
+1. Drawing Conclusions: Rich dataset with potential insights for Sleep Metrics:
+- The data analysis shows that sleep quality and duration is positively correlate with the physical activity levels of the individuals in our sample;​
+- Sleep duration decreases as stress levels increase;​
+- Choice of occupation and BMI category may affect the sleep metrics.​
 
-The data analysis shows that sleep quality and duration is positively
-correlate with the physical activity levels of the individuals in our
-sample;​
+📌 Based on the data, the hypothesis that sleep quality and duration are positively correlate with healthy lifestyle (low stress, normal BMI, high PAL) is proven correct. ​
 
-Sleep duration decreases as stress levels increase;​
+📌 However, no clear pattern was seen between daily step count and sleep metrics. ​
 
-Choice of occupation and BMI category may affect the sleep
-metrics.​
+📌 More balanced data is needed to find statistically significant insights. ​
 
-Based on the data, the hypothesis that sleep quality and duration are
-positively correlate with healthy lifestyle (low stress, normal BMI,
-high PAL) is proven correct. ​
 
-However, no clear pattern was seen between daily step count and
-sleep metrics. ​
-
-More balanced data is needed to find statistically significant insights. ​
-
-​
-Data Quality Alert​​
+2. Limitations​: Data Quality Alert​​
 
 ⚠️ Potential Biases:​​
+- Age gap between genders​​
+- Uneven BP distribution​​
+- Uneven Distinct Age Counts​​
 
-Age gap between genders​​
 
-Uneven BP distribution​​
+🔎 ​​Recommendations for Further Analysis:​​
+- Consider a larger population sample that is closer to a normal distribution in terms of age. ​​
+- Validate blood pressure distributions against population norms​.
 
-Uneven Distinct Age Counts​​
-
-​​
-
-Recommendations for Further
-Analysis:​​
-
-Consider a larger population sample
-that is closer to a normal
-distribution in terms of age ​​
-
-Validate blood pressure
-distributions against population
-norms​
-
----
+-------------
 
 ## References
 
