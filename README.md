@@ -58,7 +58,10 @@ I then followed the Process Framework learned during the BrainStation’s Data A
 - [References](#references)
 
 ## Key Takeaways
-
+- **Strong negative relationship between stress and sleep duration:** As stress levels increase, sleep duration decreases noticeably, reaffirming stress as a key determinant of poor sleep quality.
+- **Physical activity improves rest quality:** Individuals with higher daily activity levels tend to report better sleep quality and duration, emphasizing the link between balanced lifestyles and improved rest.
+- **Distinct occupational and gender patterns:** Certain occupations (e.g., scientists, sales professionals) and gender age gaps reveal different stress and sleep profiles, underlining the importance of demographic balance in health data analysis.
+- **Data quality impacts analytical reliability:** Biases in age and gender distributions highlight the need for diverse, representative datasets when drawing health-related conclusions.
 
 ## Problem Definition 
 Research Context - The Big Picture: Why Sleep Matters​ 
