@@ -38,7 +38,7 @@ I then followed the Process Framework learned during the BrainStation’s Data A
 
 ### :toolbox: Tools
 - :sparkles: Excel - Data Cleaning
-- :mag: MySql - Data Analysis 
+- :mag: MySQL - Data Analysis 
 - :bar_chart: Tableau - Creating Reports & Dashboards
 
 ## Table of Contents
@@ -48,7 +48,7 @@ I then followed the Process Framework learned during the BrainStation’s Data A
 - [Exploratory Data Analysis](#exploratory-data-analysis)
 - [Initial Data Analysis in Excel](#initial-data-analysis-in-excel)
 - [Exploratory Data Analysis ​with SQL](#exploratory-data-analysis-​with-sql)
-- [Data Vizualizations in Tableau](#data-vizualizations-in-tableau)
+- [Data Visualisations in Tableau](#data-visualisations-in-tableau)
 - [Results](#results)
 - [Conclusions and Limitations](#conclusions-and-limitations)
 - [Feedback Summary](#feedback-summary)
@@ -192,7 +192,7 @@ _Test the hypothesis that sleep quality and duration positively correlate with a
 
 2. PivotTable Analysis
 
-  - The pivot table shows that the data is a bit unbalanced in terms of count of distinctive age for each of the three groups, with the middle one (37 to 46) having more individuals (158) compared to  the other 2 (106 and 110).
+  - The pivot table shows that the data is a bit unbalanced in terms of count of distinct ages within each group, with the middle one (37 to 46) having more individuals (158) compared to  the other 2 (106 and 110).
   - The sleep duration is not very different for all groups on average, with a slight increase with the age increase. The same increase can be noticed for average quality of sleep but to a slightly higher degree.
   - Physical Activity levels are rather different with the older group (47- 59) being slightly more active on average.  
 
@@ -200,7 +200,7 @@ _Test the hypothesis that sleep quality and duration positively correlate with a
 
 
 
-3. Data Vizualizations in Excel
+3. Data Visualisations in Excel
 
 
 
@@ -232,7 +232,7 @@ Observation: Looking at the distribution of occupations across the three age gro
   
 <img width="596" height="312" alt="BMI Chart - Excel" src="https://github.com/user-attachments/assets/9d44555c-555d-4cd4-a92b-a274473296f7" />
 
-Observation: Looking at all the age groups and the average sleep duration by BMI category, it’s a bit more difficult distinguish a clear trend. Only A slight increase in sleep duration can be noticed for the older age group. However, Individuals who are obese or overweight seem to not be getting as much sleep as the people in the ‘normal weight’ category.
+Observation: Looking at all the age groups and the average sleep duration by BMI category, it’s a bit more difficult distinguish a clear trend. Only a slight increase in sleep duration can be noticed for the older age group. However, Individuals who are obese or overweight seem to not be getting as much sleep as the people in the ‘normal weight’ category.
 
 
 
@@ -381,7 +381,7 @@ GROUP BY Gender;
    - May require additional validation or data collection
 
 
-## Data Vizualizations in Tableau
+## Data Visualisations in Tableau
 
 Importing "Sleep_dataset_SQL.csv" file to Tableau
 
@@ -434,14 +434,14 @@ Finding answers: Occupation & Physical Activity Impact ​
   
 <img width="672" height="148" alt="Tableau - Avg Sleep Duration by Occup   Activity" src="https://github.com/user-attachments/assets/82174e7a-5a31-448e-b762-cb579ec2a235" />
 
-- These Tableau visualizations clearly show that average Sleep time is impacted by the occupation of the individuals in our data set with people working in sales and scientists sleeping the least amount of time. At other end of the spectrum engineers have a good night of sleep on average.  
+- These Tableau visualizations clearly show that average Sleep time is impacted by the occupation of the individuals in our dataset with people working in sales and scientists sleeping the least amount of time. At the other end of the spectrum, engineers have a good night's sleep on average.  
 
-- The second bar plot shows that there is also a positive correlation between physical activity level and sleep duration, with nurses, not surprisingly being the most active. Engineers however seem to be an exception to the trend a bit as their physical activity is not the highest, despite sleeping the longest time.
+- The second bar plot shows that there is also a positive correlation between physical activity level and sleep duration, with nurses, not surprisingly being the most active. Engineers however seem to be an exception to the trend a bit as, despite sleeping the longest on average, their physical activity levels are not the highest.
   
 ---
 
 ## Results
-The analysis insights are summarized are follows: 
+The analysis insights are summarized are as follows: 
 
 Key Findings
 1. Gender and Age Distribution  
@@ -514,7 +514,7 @@ The following summary is based on final project feedback received from BrainStat
 
 1. Chattu VK, Manzar MD, Kumary S, Burman D, Spence DW, Pandi-Perumal SR. The Global Problem of Insufficient Sleep and Its Serious Public Health Implications. Healthcare (Basel). 2018 Dec 20;7(1):1. doi: 10.3390/healthcare7010001
 2. [Data Analytics Course Support](https://brainstation.io/course/online/data-analytics)
-3. [Excel Excercises](https://excelexercises.com/)
+3. [Excel Exercises](https://excelexercises.com/)
 4. [Writing on GitHub - Basic writing and formatting syntax](https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax)
 5. [Microsoft keyboard shortcuts in Excel](https://support.microsoft.com/en-us/office/keyboard-shortcuts-in-excel-1798d9d5-842a-42b8-9c99-9b7213f0040f)
 6. [Complete list of github markdown emoji markup](https://gist.github.com/rxaviers/7360908)
