@@ -208,7 +208,7 @@ Checking Data Validity
    
 <img width="532" height="328" alt="Excel Bar Chart by Age Group" src="https://github.com/user-attachments/assets/00f983e5-e730-429d-be87-f0763788ca72" />
 
-
+---
 
 - Sleep disorders:​ 
 
@@ -216,7 +216,7 @@ Checking Data Validity
  
  Observation: The chart shows what we would expect in terms of the relationship between sleep disorders and sleep duration, and sleep quality as rated by the individuals.  
 
-
+---
 
 - Looking at ​occupations per age group and respective stress levels​:
   
@@ -224,7 +224,7 @@ Checking Data Validity
 
 Observation: Looking at the distribution of occupations across the three age groups, we can see a clear difference, in the diversity of roles. The first (27-36) group has the most varied roles (9 different occupations) while the oldest one (37-59) only showcases 4 occupations. This imbalance might create some biased insights, specifically for roles that don’t have a comparative in the other age groups.  
 
-
+---
 
 - Looking at BMI per age group and their average sleep duration​:
   
@@ -266,19 +266,19 @@ CREATE TABLE sleepdata (
 ```
 <img width="204" height="244" alt="SQL Table creation" src="https://github.com/user-attachments/assets/aedcf3ce-6625-4742-9b24-c47cee9a0c1e" />
 
-
+---
 
  - Configure Import Settings & loading data into the created table:
    
 <img width="612" height="422" alt="Import Settings - MySql" src="https://github.com/user-attachments/assets/4e6a3a86-73e5-4d06-9749-1e8d30504f2d" />
 
-
+---
 
  - Set as Default Schema:
    
 <img width="578" height="360" alt="Set as Default schema in MySQl" src="https://github.com/user-attachments/assets/8d87214d-2674-42f6-b018-6f633150f887" />
 
-
+---
 
  - Inspecting Data in SQL:
 
@@ -381,11 +381,61 @@ GROUP BY Gender;
 
 ## Data Vizualizations in Tableau
 
+Importing "Sleep_dataset_SQL.csv" file to Tableau
 
+<img width="678" height="454" alt="Tableau - Importing File" src="https://github.com/user-attachments/assets/1e5211fe-14aa-40da-a3e8-9dce113057bf" />
+
+---
+
+Finding answers: Gender Differences ​ 
+- Q1: Is there a difference between genders in terms of sleep quality?​​ 
+- Q2: Is there a difference between genders in terms of sleep duration?​​
+
+<img width="606" height="128" alt="Tableau - Genders   Sleep" src="https://github.com/user-attachments/assets/196f19a1-2253-4ec6-84c6-03286da0135e" />
 
 <img width="708" height="406" alt="Avg  Sleep Duration by Gender" src="https://github.com/user-attachments/assets/6e730e1a-35be-4731-a1eb-ef4edf2ff355" />
 
+- The graphs show that on average, the women in our sample sleep slightly more and rate their quality of sleep higher than men. ​ 
 
+---
+
+Investigating Age Distribution Data through visualizations ​with Tableau ​
+
+<img width="584" height="424" alt="Tableau - Age Distribution" src="https://github.com/user-attachments/assets/7504f957-5635-45af-9c6e-7d6b6eea328d" />
+
+<img width="354" height="406" alt="Tableau - Age Distribution  Per ID" src="https://github.com/user-attachments/assets/d29bdc41-8622-4e2c-aaf5-1ec32577e31c" />
+
+- However, looking more closely at the age distribution, the average age of the women in our dataset is significantly higher, than the men, as all individuals with an age above 49 are females. A few individuals are 34. This will likely cause some bias in our insights. ​ 
+
+---
+
+Finding answers: Stress Impact​ 
+
+- Q: Do people with higher stress levels sleep more or less?​
+  
+<img width="594" height="498" alt="Tableau - Stress" src="https://github.com/user-attachments/assets/693d10fd-3e18-4cb3-aaed-a8ddadec16ed" />
+
+​- The scatterplot shows a strong negative correlation between the two continuous variables, indicating that as stress levels increase (x-axis), sleep duration decreases (y-axis).​ 
+
+​ 
+---
+
+Finding answers: Occupation & Physical Activity Impact ​ 
+
+- Q1: Is there a correlation between occupation and sleep duration?​
+  
+<img width="614" height="354" alt="Tableau - Avg Sleep Duration by Occup" src="https://github.com/user-attachments/assets/be141f75-3539-4954-9d70-9d01efdc309f" />
+
+  
+- Q2: Do people with higher physical activity levels experience better sleep quality?​
+  
+<img width="672" height="148" alt="Tableau - Avg Sleep Duration by Occup   Activity" src="https://github.com/user-attachments/assets/82174e7a-5a31-448e-b762-cb579ec2a235" />
+
+- These Tableau visualizations clearly show that average Sleep time is impacted by the occupation of the individuals in our data set with people working in sales and scientists sleeping the least amount of time. At other end of the spectrum engineers have a good night of sleep on average.  
+
+- The second bar plot shows that there is also a positive correlation between physical activity level and sleep duration, with nurses, not surprisingly being the most active. Engineers however seem to be an exception to the trend a bit as their physical activity is not the highest, despite sleeping the longest time.
+  
+---
 
 ## Results
 The analysis insights are summarized are follows: 
@@ -445,7 +495,7 @@ Key Findings
 - Consider a larger population sample that is closer to a normal distribution in terms of age. ​​
 - Validate blood pressure distributions against population norms​.
 
--------------
+---
 
 ## References
 
