@@ -36,8 +36,6 @@ I then followed the Process Framework learned during the BrainStation’s Data A
     - Designed interactive Tableau dashboards to visualize sleep quality, duration, and associations with lifestyle variables
  - Outcome: Delivered a clear, data-driven narrative on how various factors, such as physical activity, stress, and work patterns, affect sleep quality. The analysis highlights opportunities for improving overall health outcomes through better sleep habits.
 
-<a href ="http://wwww.tableau.dashboard.com"> Click here for Tableau Dashboard </a>
-
 ### :toolbox: Tools
 - :sparkles: Excel - Data Cleaning
 - :mag: MySql - Data Analysis 
@@ -101,22 +99,51 @@ From _"The Global Problem of Insufficient Sleep and Its Serious Public Health Im
 
 ## Data Preparation and Cleaning
 In the initial data preparation phase, the following cleaning steps were performed in Excel:
+
  - BMI Category Standardization
      - Corrected inconsistencies between "Normal" and "Normal Weight"
-     - Used 'Split Text to Columns' action 
-- Blood Pressure Processing
+     - Used 'Split Text to Columns' action (+ Delete)
+
+
+  <img width="314" height="149" alt="Excel - Data cleaning BMI Categories" src="https://github.com/user-attachments/assets/a60aa3dd-5168-4d0b-b8f6-a33225c66734" />
+
+ - Blood Pressure Processing 
      - Split BP text string into two numerical columns:  
              - Systolic Blood Pressure
              - Diastolic Blood Pressure
      - Used LEFT() and RIGHT() functions for separation
+     - Changed the newly created columns into numerical format rather than text string 
 
-- Saved Cleaned _"Sleep_health_and_lifestyle_dataset.csv"_ file as ***"Sleep_dataset_SQL.csv"***
 
-  <img width="314" height="149" alt="Excel - Data cleaning BMI Categories" src="https://github.com/user-attachments/assets/a60aa3dd-5168-4d0b-b8f6-a33225c66734" />
+```Excel
+
+-- General Formulas:
+
+=LEFT(text, [length])
+=RIGHT(text, [length])
+
+
+-- Extract Systolic Blood Pressure from Blood Pressure column 
+-- Apply formula to extract first 3 numbers from the left end of the original string
+
+=LEFT([@Blood_Pressure], 3)
+
+
+-- Extract Diastolic Blood Pressure from Blood Pressure column 
+-- Apply formula to extract last 2 numbers from the right end of the original string 
+
+=RIGHT([@Blood_Pressure], 2)
+
+```
   
-  <img width="208" height="113" alt="Excel Split text" src="https://github.com/user-attachments/assets/2213e90c-82c5-4a7e-9934-914e5d333979" />
+  <img width="416" height="226" alt="Excel Split text" src="https://github.com/user-attachments/assets/2213e90c-82c5-4a7e-9934-914e5d333979" />
 
 
+
+- Saved Cleaned and Prepared  _"Sleep_health_and_lifestyle_dataset.csv"_ file as:
+           ***"Sleep_dataset_SQL.csv"***  - [See file here](
+
+  
 ## Exploratory Data Analysis 
 The EDA involved exploring the sleep health & lifestyle data to answer some key research questions, such as: 
 
@@ -135,9 +162,9 @@ _Test the hypothesis that sleep quality and duration positively correlate with a
  - _Do people with higher physical activity levels experience better sleep quality?_
  - _Is there a relationship between daily steps and sleep duration?_
 
-3. Stress Effects 🤯
+3. Occupation & Stress Effects 🤯
  - _Do people with higher stress levels sleep more or less?_
- - _Is there a correlation between stress levels and sleep quality?_
+ - _Is there a correlation between occupation, stress levels and sleep quality?_
 
 4. Health Indicators 🩺
  - _How do blood pressure levels correlate with sleep patterns?_
@@ -145,6 +172,32 @@ _Test the hypothesis that sleep quality and duration positively correlate with a
     
 
 ## Initial Data Analysis in Excel
+
+1. Age Group Classification
+
+```Excel
+
+-- Apply formula to group individuals in age groups:
+-- Total age range: 27-59 years​
+
+=IF([@Age]<37, "Group 1: 27-36", IF([@Age]<47, "Group 2: 37-46", "Group 3: 47-59"))
+```
+
+- Created three age groups: ​ 
+
+   - Group 1: Late 20's to mid-30's (27-36)​ 
+   - Group 2: Late 30's to mid-40's (37-46)​ 
+   - Group 3: Late 40's to late-50's (47-59)​
+
+
+2. PivotTable Analysis
+
+  - The pivot table shows that the data is a bit unbalanced in terms of count of distinctive age for each of the three groups, with the middle one (37 to 46) having more individuals (158) compared to  the other 2(106 and 110).
+  - The sleep duration is not very different for all groups on average, with a slight increase with the age increase. The same increase can be noticed for average quality of sleep but to a slightly higher degree.
+  - Physical Activity levels are rather different with the older group (47- 59) being slightly more active on average.  
+
+<img width="317" height="57" alt="Pivot Table - excel" src="https://github.com/user-attachments/assets/5a293abd-0756-4c0c-964c-6cb02f6d7f15" />
+
 
 ## EDA ​with SQL
 
@@ -197,17 +250,23 @@ GROUP BY Gender;
 <img width="168" height="72" alt="Group by gender Outcome" src="https://github.com/user-attachments/assets/f74e0b95-2820-473b-9693-c6163a4fe4ce" />
 
 ```sql
+
 -- Age Distribution by Gender
+
 SELECT AVG(Age), Gender
 FROM sleep_database.sleep_dataset_sql 
 GROUP BY Gender;
 
+
 -- Stress Levels by Gender
+
 SELECT AVG(Stress_Level), Gender
 FROM sleep_database.sleep_dataset_sql 
 GROUP BY Gender;
 
+
 -- Multiple Health Metrics by Gender
+
 SELECT
     COUNT(DISTINCT BMI_Category),
     AVG(Systolic_BP),
