@@ -36,6 +36,8 @@ I then followed the Process Framework learned during the BrainStation’s Data A
     - Designed interactive Tableau dashboards to visualize sleep quality, duration, and associations with lifestyle variables
  - Outcome: Delivered a clear, data-driven narrative on how various factors, such as physical activity, stress, and work patterns, affect sleep quality. The analysis highlights opportunities for improving overall health outcomes through better sleep habits.
 
+<a href ="http://wwww.tableau.dashboard.com"> Click here for Tableau Dashboard </a>
+
 ### :toolbox: Tools
 - :sparkles: Excel - Data Cleaning
 - :mag: MySql - Data Analysis 
