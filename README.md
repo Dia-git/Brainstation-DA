@@ -393,7 +393,7 @@ Finding answers: Gender Differences ​
 
 <img width="606" height="128" alt="Tableau - Genders   Sleep" src="https://github.com/user-attachments/assets/196f19a1-2253-4ec6-84c6-03286da0135e" />
 
-<img width="708" height="406" alt="Avg  Sleep Duration by Gender" src="https://github.com/user-attachments/assets/6e730e1a-35be-4731-a1eb-ef4edf2ff355" />
+<img width="584" height="424" alt="Tableau - Age Distribution" src="https://github.com/user-attachments/assets/7504f957-5635-45af-9c6e-7d6b6eea328d" />
 
 - The graphs show that on average, the women in our sample sleep slightly more and rate their quality of sleep higher than men. ​ 
 
@@ -401,7 +401,8 @@ Finding answers: Gender Differences ​
 
 Investigating Age Distribution Data through visualizations ​with Tableau ​
 
-<img width="584" height="424" alt="Tableau - Age Distribution" src="https://github.com/user-attachments/assets/7504f957-5635-45af-9c6e-7d6b6eea328d" />
+
+<img width="708" height="406" alt="Avg  Sleep Duration by Gender" src="https://github.com/user-attachments/assets/6e730e1a-35be-4731-a1eb-ef4edf2ff355" />
 
 <img width="354" height="406" alt="Tableau - Age Distribution  Per ID" src="https://github.com/user-attachments/assets/d29bdc41-8622-4e2c-aaf5-1ec32577e31c" />
 
